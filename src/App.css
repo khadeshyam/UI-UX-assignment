@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 12px;
+}
+
+header {
+  text-align:left;
+  margin: 20px;
+  margin-top:0px;
+  margin-left: 0px;
+}
+
+.logo {
+  width: 30%;
+  height: 80px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.event {
+  display: flex;
+  flex-direction: column;
+}
+
+.event .box-container {
+  display: flex;
+  flex-direction: row;
+  gap:8px;
+}
+
+
+.box1 {
+  flex: 3;
+}
+
+.box2 {
+  flex: 1;
+}
+
+.box3 {
+  flex: 1;
+}
+
+.box1,
+.box2,
+.box3 {
+  padding: 8px;
+  margin: 4px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.text1,
+.text2 {
+  flex: 2;
+  text-align: center;
+  padding: 8px;
+  margin: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.category-1 {
+  background-color: lightblue;
+}
+
+.category-2 {
+  background-color: lightgreen;
+}
+
+.box2.A {
+  background-color: pink;
+}
+
+.box2.B {
+  background-color: lightyellow;
+}
+
+.box2.C {
+  background-color: lightgray;
+}
+
+.box2.D {
+  background-color: lightcoral;
+}
+
+.box3 {
+  cursor: pointer;
+}
+
+.refresh-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.refresh-button:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 600px) {
+  .content {
+    flex-direction: column;
+  }
+  .container {
+    padding: 8px;
+  }
+}
